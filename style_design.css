@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1200px;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 10px;
+    margin: auto
+}
+.header {
+    background-color: #76c7c0 ;
+}
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.text{
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid transparent
+}
+.modus {
+    font-size: 35px;
+    /* margin-left: 100px; */
+    padding: 15px;
+}
+.versus {
+    font-size:20px;
+}
+.nav-group {
+    display: flex;
+    justify-content: space-between
+}
+.nav-list {
+    margin-right: 20px;
+    text-align: center;
+    padding: 15px
+}
+.nav-list ul {
+    list-style-type: none;
+}
+.nav-list li {
+    display: inline-block;
+    padding: 10px;
+}
+.text:hover {
+    background-color: #62a29e;
+    border: 1px solid #528b86;
+    padding: 10px;
+    border-radius: 6px;
+}
+.search {
+    /* margin-right: 100px; */
+    padding: 25px;
+    width: 25px;
+    height: 25px;
+}
+.search:hover {
+    background-color: green;
+}
+.sub-menu {
+    display: none;
+    /* visibility: hidden; */
+    border-radius: 6px;
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    width: 200px;
+    margin-left: -10px;
+    top: 50px;
+    max-height: 0;
+    font: bold 12px 'Open Sans Condensed', sans-serif;
+}
+.sub-menu::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 90%;
+    border:5px solid;
+    border-color: transparent transparent #e8645a transparent;
+}
+
+.text-item {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+.text-item:hover {
+    background-color: #e8645a;
+    padding: 10px;
+    border-radius: 6px;
+}  
+.text-item:hover > .sub-menu{
+    background-color: #e2534b;
+    display: block;
+    max-height: 300px;
+}
+.sub-menu > li{
+    background-color: #e8645a;
+    margin-top: 3px;
+}
+/* .sub-menu li a {
+    display: block;
+} */
+.sub-menu a:hover {
+    background-color: #76c7c0;
+    padding: 10px;
+}
+.sub-menu li:last-child {
+    margin-bottom: 3px;
+}
